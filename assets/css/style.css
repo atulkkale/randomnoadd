@@ -143,4 +143,16 @@ sub { bottom: -.25em; }
   text-transform: uppercase;
 }
 
+.error::after{
+  content: "Please enter proper number!";
+  color: red;
+  font-size: 15px;
+}
+
+.no_combinations::before{
+  content: "Can not find any possible combinations!";
+  color: red;
+  font-size: 20px;
+}
+
 /* Stylesheet ends here */
