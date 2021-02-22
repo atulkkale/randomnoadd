@@ -1,67 +1,5 @@
 @charset "utf-8";
 
-/*------------------------------------------------------------------
-  [Table of contents]
-  * To keep an overview of structure of your code, we make use of table of 
-  * content. Table of content is use display the overall tree structure of your
-  * Layout. 
-  * (NOTE: Remove this commented code once you start developing the code.
-  * Remove the following table of content and add your own as this is just and 
-  * example to let you know)
-
-  1. CSS Reset Code
-    1.1. Eric Meyers Reset/HTML5 display-role reset for older browsers
-    1.2. Clear Fix
-    1.3. Font class declaration
-  2. Body
-  3. Header / .header
-    2.1. Navigation / .navbar
-  4. Content / .content
-    4.1. Left column / .leftcolumn
-    4.2. Right column / .rightcolumn
-    4.3. Sidebar / .sidebar
-      4.3.1. RSS / .rss
-      4.3.2. Search / .search
-      4.3.3. Boxes / .box
-      4.3.4. Sideblog / .sideblog
-      4.3.5. Advertisements / .ads
-  5. Footer / .footer
-  ------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-  [Color codes]
-  * Mention the color code you have used in your html document for the respective
-  * elements given as follow. 
-  * (NOTE: Remove this commented code once you start developing the code. 
-  * Remove the following color code and add your own as this is just and 
-  * example to let you know)
-
-  Header nav: #e5e5df (Cararra)
-  Header nav a (hover): #fff (white)
-  Header nav a (active): #fff (white)
--------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-  [Typography]
-  * Mention the Typography you have used in your html document for the respective
-  * elements given as follow.
-  * (NOTE: Remove this commented code once you start developing the code. 
-  * Remove the following typography and add your own as this is just and 
-  * example to let you know)
-
-  Header nav a: 16px 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  View-register li a : 12px 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  -------------------------------------------------------------------*/
-
-/* ==========================================================================
-   1. CSS Reset Code
-   ========================================================================== */
-
-/* 1.1. Eric Meyers Reset
-   http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-   ========================================================================== */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
 ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
@@ -134,22 +72,75 @@ sub { bottom: -.25em; }
 
 .cf:after { clear: both; }
 
-/* 1.3. Font class declaration
-   ========================================================================== */
-/*
- * Mention the font property (eg: font-family, font-size, font-weight, font-style
- * etc) that have been commonly used in the html document. Make a class of it and
- * apply to the element wherever it is needed. If any single property in changed,
- * then override only that property in the particular class which is used for the
- * element.
- * (NOTE: Remove this commented code once you start 
- * developing the code. Remove the following font class and add your own
- * as this is just and example to let you know. If there is only one font family
- * followed throughout the site, then menstion the font property in body. No need
- * of creating an extra class for it) */
-
 .futura-bold-font {
   font-family: 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
+
+/* Stylesheet starts here */
+
+.container{
+  background-image: url("../images/thunderstorm.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.wrapper{
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(240, 248, 255, 0.6);
+  padding: 30px 20px;
+  color: #1f023e;
+  border-radius: 5px;
+}
+
+.wrapper label{
+  font-size: 24px;
+  display: block;
+  font-weight: 600;
+}
+
+.wrapper label::first-letter{
+  text-transform: uppercase;
+}
+
+.wrapper input{
+  outline: none;
+  height: 20px;
+  display: block;
+  margin: 20px auto;
+}
+
+.wrapper form .enter_btn{
+  margin: 20px auto;
+  padding: 7px 16px;
+  background-color: #ccc;
+  height: auto;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.wrapper form .enter_btn:hover{
+  background-color: #fff;
+  color: #0d011a;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.wrapper h2{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.wrapper h2::first-letter{
+  text-transform: uppercase;
+}
+
+/* Stylesheet ends here */
